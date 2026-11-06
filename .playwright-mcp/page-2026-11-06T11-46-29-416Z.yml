@@ -1,0 +1,56 @@
+- main [ref=e3]:
+  - heading "Bookshelf" [level=1] [ref=e4]
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - text: Search
+      - searchbox "Search" [ref=e7]
+    - generic [ref=e8]:
+      - text: Genre
+      - combobox "Genre" [ref=e9]:
+        - option "All genres" [selected]
+        - option "Fantasy"
+        - option "Sci-Fi"
+        - option "Mystery"
+        - option "Non-fiction"
+  - paragraph [ref=e10]: "3 of 5 read · Average rating: 4"
+  - list [ref=e11]:
+    - listitem [ref=e12]:
+      - generic [ref=e13]:
+        - heading "Dune" [level=3] [ref=e14]
+        - paragraph [ref=e15]: Frank Herbert · sci-fi
+        - paragraph [ref=e16]: ★★★★★
+      - generic [ref=e17]:
+        - button "Mark Dune as unread" [ref=e18]
+        - button "Remove Dune" [ref=e19]
+    - listitem [ref=e20]:
+      - generic [ref=e21]:
+        - heading "The Hobbit" [level=3] [ref=e22]
+        - paragraph [ref=e23]: J. R. R. Tolkien · fantasy
+        - paragraph [ref=e24]: ★★★★
+      - generic [ref=e25]:
+        - button "Mark The Hobbit as unread" [ref=e26]
+        - button "Remove The Hobbit" [ref=e27]
+    - listitem [ref=e28]:
+      - generic [ref=e29]:
+        - heading "Gone Girl" [level=3] [ref=e30]
+        - paragraph [ref=e31]: Gillian Flynn · mystery
+        - paragraph [ref=e32]: not rated
+      - generic [ref=e33]:
+        - button "Mark Gone Girl as unread" [active] [ref=e52]
+        - button "Remove Gone Girl" [ref=e35]
+    - listitem [ref=e36]:
+      - generic [ref=e37]:
+        - heading "Neuromancer" [level=3] [ref=e38]
+        - paragraph [ref=e39]: William Gibson · sci-fi
+        - paragraph [ref=e40]: ★★★
+      - generic [ref=e41]:
+        - button "Mark Neuromancer as read" [ref=e42]
+        - button "Remove Neuromancer" [ref=e43]
+    - listitem [ref=e44]:
+      - generic [ref=e45]:
+        - heading "Sapiens" [level=3] [ref=e46]
+        - paragraph [ref=e47]: Yuval Noah Harari · non-fiction
+        - paragraph [ref=e48]: not rated
+      - generic [ref=e49]:
+        - button "Mark Sapiens as read" [ref=e50]
+        - button "Remove Sapiens" [ref=e51]

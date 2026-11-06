@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { filterBooks, removeBook, toggleRead } from "./books";
 import BookList from "./components/BookList";
 import Stats from "./components/Stats";
@@ -9,8 +9,14 @@ export default function App() {
   const [books, setBooks] = useState<Book[]>(initialBooks);
   const [genre, setGenre] = useState<GenreFilter>("all");
   const [query, setQuery] = useState("");
+  const searchRef = useRef<HTMLInputElement>(null);
 
   const visibleBooks = filterBooks(books, { genre, query });
+
+  function handleClearSearch() {
+    setQuery("");
+    searchRef.current?.focus();
+  }
 
   function handleToggleRead(id: string) {
     setBooks(toggleRead(books, id));
@@ -24,14 +30,25 @@ export default function App() {
     <main>
       <h1>Bookshelf</h1>
       <div className="controls">
-        <label>
-          Search
-          <input
-            type="search"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-          />
-        </label>
+        <div className="field">
+          <label htmlFor="search">Search</label>
+          <span className="search-field">
+            <input
+              id="search"
+              ref={searchRef}
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+            />
+            <button
+              type="button"
+              aria-label="Clear search"
+              onClick={handleClearSearch}
+            >
+              Clear
+            </button>
+          </span>
+        </div>
         <label>
           Genre
           <select

@@ -22,6 +22,32 @@ main {
   gap: 0.25rem;
 }
 
+.controls .field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.search-field {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-field input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search-field button {
+  background-color: #facc15;
+  color: #111;
+  border: 1px solid #eab308;
+  cursor: pointer;
+}
+
+.search-field button:hover {
+  background-color: #eab308;
+}
+
 .book-list {
   display: flex;
   flex-direction: column;
@@ -41,6 +67,7 @@ main {
 
 .book.read {
   border-left: 4px solid #ff4a11;
+  padding-left: calc(1rem - 4px);
 }
 
 .book h3,
@@ -56,8 +83,4 @@ main {
 
 .stats {
   opacity: 0.7;
-}
-
-.book.read h3 {
-  color: #f3f5f9;
 }

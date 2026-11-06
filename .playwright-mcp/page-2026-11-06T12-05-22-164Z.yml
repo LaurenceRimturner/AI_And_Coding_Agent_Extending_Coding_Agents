@@ -1,0 +1,58 @@
+- main [ref=e3]:
+  - heading "Bookshelf" [level=1] [ref=e4]
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]: Search
+      - generic [ref=e8]:
+        - searchbox "Search" [ref=e9]
+        - button "Clear search" [ref=e10] [cursor=pointer]: Clear
+    - generic [ref=e11]:
+      - text: Genre
+      - combobox "Genre" [ref=e12]:
+        - option "All genres" [selected]
+        - option "Fantasy"
+        - option "Sci-Fi"
+        - option "Mystery"
+        - option "Non-fiction"
+  - paragraph [ref=e13]: "2 of 5 read · Average rating: 4"
+  - list [ref=e14]:
+    - listitem [ref=e15]:
+      - generic [ref=e16]:
+        - heading "Dune" [level=3] [ref=e17]
+        - paragraph [ref=e18]: Frank Herbert · sci-fi
+        - paragraph [ref=e19]: ★★★★★
+      - generic [ref=e20]:
+        - button "Mark Dune as unread" [ref=e21]
+        - button "Remove Dune" [ref=e22]
+    - listitem [ref=e23]:
+      - generic [ref=e24]:
+        - heading "The Hobbit" [level=3] [ref=e25]
+        - paragraph [ref=e26]: J. R. R. Tolkien · fantasy
+        - paragraph [ref=e27]: ★★★★
+      - generic [ref=e28]:
+        - button "Mark The Hobbit as unread" [ref=e29]
+        - button "Remove The Hobbit" [ref=e30]
+    - listitem [ref=e31]:
+      - generic [ref=e32]:
+        - heading "Gone Girl" [level=3] [ref=e33]
+        - paragraph [ref=e34]: Gillian Flynn · mystery
+        - paragraph [ref=e35]: not rated
+      - generic [ref=e36]:
+        - button "Mark Gone Girl as read" [ref=e37]
+        - button "Remove Gone Girl" [ref=e38]
+    - listitem [ref=e39]:
+      - generic [ref=e40]:
+        - heading "Neuromancer" [level=3] [ref=e41]
+        - paragraph [ref=e42]: William Gibson · sci-fi
+        - paragraph [ref=e43]: ★★★
+      - generic [ref=e44]:
+        - button "Mark Neuromancer as read" [ref=e45]
+        - button "Remove Neuromancer" [ref=e46]
+    - listitem [ref=e47]:
+      - generic [ref=e48]:
+        - heading "Sapiens" [level=3] [ref=e49]
+        - paragraph [ref=e50]: Yuval Noah Harari · non-fiction
+        - paragraph [ref=e51]: not rated
+      - generic [ref=e52]:
+        - button "Mark Sapiens as read" [ref=e53]
+        - button "Remove Sapiens" [ref=e54]
